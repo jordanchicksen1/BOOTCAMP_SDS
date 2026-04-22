@@ -9507,6 +9507,7 @@ RectTransform:
   - {fileID: 332045305}
   - {fileID: 468327155}
   - {fileID: 6301919}
+  - {fileID: 2055009359}
   m_Father: {fileID: 1388611592}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -9534,7 +9535,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 0a44d6eb57e0f814d962c1cf16ce3b61, type: 3}
+  m_Texture: {fileID: 2800000, guid: 95a0dc9fdfd46924ba1f3025f1a82165, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -34229,8 +34230,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 805, y: 1746.3}
+  m_AnchoredPosition: {x: -35.665, y: 16.784}
+  m_SizeDelta: {x: 876.33, y: 1779.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1227160681
 MonoBehaviour:
@@ -34252,7 +34253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: ff3383c3b205a7c47bad7f6c7ef8cdf3, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -38345,7 +38346,6 @@ RectTransform:
   - {fileID: 2058099633}
   - {fileID: 1264457764}
   - {fileID: 319160335}
-  - {fileID: 2055009359}
   - {fileID: 1227160680}
   - {fileID: 977948312}
   - {fileID: 960262142}
@@ -45323,7 +45323,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 274295899}
   m_HandleRect: {fileID: 274295898}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -60390,7 +60390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2055009359
 RectTransform:
   m_ObjectHideFlags: 0
@@ -60406,11 +60406,11 @@ RectTransform:
   - {fileID: 1713226410}
   - {fileID: 279911120}
   - {fileID: 135455680}
-  m_Father: {fileID: 1388611592}
+  m_Father: {fileID: 319160335}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35.663, y: 0.01889}
+  m_AnchoredPosition: {x: -0.000019073486, y: 0.010209445}
   m_SizeDelta: {x: 876.33, y: 1813.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2055009360
@@ -60433,7 +60433,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: ff3383c3b205a7c47bad7f6c7ef8cdf3, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
