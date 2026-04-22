@@ -5,6 +5,8 @@ public class ScreenSwap : MonoBehaviour
 {
     [SerializeField]
     private List<GameObject> _screens;
+    [SerializeField]
+    private List<GameObject> _SchoolActivityScreens;
     private bool isOutDoor;
     private bool isJustMe;
 
@@ -12,7 +14,7 @@ public class ScreenSwap : MonoBehaviour
     {
         ShowStartPanel();
     }
-    public void ShowStartPanel() 
+    public void ShowStartPanel()
     {
         for (int i = 0; i < _screens.Count; i++)
         {
@@ -40,7 +42,9 @@ public class ScreenSwap : MonoBehaviour
         isJustMe = true;
     }
 
-    public void ActivateActivitiesForMe() 
+
+
+    public void ActivateActivitiesForMe()
     {
         for (int i = 0; i < _screens.Count; i++)
         {
@@ -50,7 +54,7 @@ public class ScreenSwap : MonoBehaviour
         isJustMe = true;
     }
 
-    
+
 
     public void ActivateActivitiesForFriends()
     {
@@ -113,4 +117,15 @@ public class ScreenSwap : MonoBehaviour
             ShowInDoorActivities();
         }
     }
+
+    public void SchoolActivities()
+    {
+        for (int i = 0; i < _screens.Count; i++)
+        {
+            _screens[i].SetActive(false);
+        }
+        _SchoolActivityScreens[0].SetActive(true);
+    }
+
+
 }
