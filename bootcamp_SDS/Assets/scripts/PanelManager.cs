@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PanelManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PanelManager : MonoBehaviour
     public GameObject outdoorNotAlonePanel;
     public GameObject indoorAlonePanel;
     public GameObject outdoorAlonePanel;
+    public ScrollRect scrollRect;
 
     public void SelectPanel()
     {
@@ -33,6 +35,7 @@ public class PanelManager : MonoBehaviour
 
     public void ShowIndoorAloneActivites()
     {
+        scrollRect.verticalNormalizedPosition = 1f;
         indoorAlonePanel.SetActive(false);
         scrollView.SetActive(true);
         indoorAloneScroll.SetActive(true);
@@ -43,6 +46,7 @@ public class PanelManager : MonoBehaviour
 
     public void ShowOutdoorAloneActivites()
     {
+        scrollRect.verticalNormalizedPosition = 1f;
         outdoorAlonePanel.SetActive(false);
         scrollView.SetActive(true);
         indoorAloneScroll.SetActive(false);
@@ -53,6 +57,7 @@ public class PanelManager : MonoBehaviour
 
     public void ShowIndoorNotAloneActivites()
     {
+        scrollRect.verticalNormalizedPosition = 1f;
         indoorNotAlonePanel.SetActive(false);
         scrollView.SetActive(true);
         indoorAloneScroll.SetActive(false);
@@ -63,11 +68,56 @@ public class PanelManager : MonoBehaviour
 
     public void ShowOutdoorNotAloneActivites()
     {
+        scrollRect.verticalNormalizedPosition = 1f;
         outdoorNotAlonePanel.SetActive(false);
         scrollView.SetActive(true);
         indoorAloneScroll.SetActive(false);
         outdoorAloneScroll.SetActive(false);
         indoorNotAloneScroll.SetActive(false);
         outdoorNotAloneScroll.SetActive(true);
+    }
+
+    public void HideIndoorAloneActivites()
+    {
+        scrollRect.verticalNormalizedPosition = 0f;
+        indoorAlonePanel.SetActive(true);
+        scrollView.SetActive(false);
+        indoorAloneScroll.SetActive(false);
+        outdoorAloneScroll.SetActive(false);
+        indoorNotAloneScroll.SetActive(false);
+        outdoorNotAloneScroll.SetActive(false);
+    }
+
+    public void HideOutdoorAloneActivites()
+    {
+        scrollRect.verticalNormalizedPosition = 0f;
+        outdoorAlonePanel.SetActive(true);
+        scrollView.SetActive(false);
+        indoorAloneScroll.SetActive(false);
+        outdoorAloneScroll.SetActive(false);
+        indoorNotAloneScroll.SetActive(false);
+        outdoorNotAloneScroll.SetActive(false);
+    }
+
+    public void HideIndoorNotAloneActivites()
+    {
+        scrollRect.verticalNormalizedPosition = 0f;
+        indoorNotAlonePanel.SetActive(true);
+        scrollView.SetActive(false);
+        indoorAloneScroll.SetActive(false);
+        outdoorAloneScroll.SetActive(false);
+        indoorNotAloneScroll.SetActive(false);
+        outdoorNotAloneScroll.SetActive(false);
+    }
+
+    public void HideOutdoorNotAloneActivites()
+    {
+        scrollRect.verticalNormalizedPosition = 0f;
+        outdoorNotAlonePanel.SetActive(true);
+        scrollView.SetActive(false);
+        indoorAloneScroll.SetActive(false);
+        outdoorAloneScroll.SetActive(false);
+        indoorNotAloneScroll.SetActive(false);
+        outdoorNotAloneScroll.SetActive(false);
     }
 }

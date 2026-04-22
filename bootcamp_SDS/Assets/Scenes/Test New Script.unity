@@ -395,6 +395,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!114 &6301921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1689,6 +1690,164 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25331569}
   m_CullTransparentMesh: 1
+--- !u!1 &26571565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 26571566}
+  - component: {fileID: 26571570}
+  - component: {fileID: 26571569}
+  - component: {fileID: 26571568}
+  - component: {fileID: 26571567}
+  m_Layer: 5
+  m_Name: backButton (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &26571566
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26571565}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1242791609}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -321, y: -1813}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &26571567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26571565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2956c9f6ff4bdf0408eb07522d9a1655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanelManager
+  nextPanel: {fileID: 0}
+  currentPanel: {fileID: 0}
+  previousPanel: {fileID: 0}
+  scrollView: {fileID: 1055730163}
+  indoorAloneScroll: {fileID: 1381572953}
+  outdoorAloneScroll: {fileID: 180813589}
+  indoorNotAloneScroll: {fileID: 1242791608}
+  outdoorNotAloneScroll: {fileID: 1982384523}
+  indoorNotAlonePanel: {fileID: 2055009358}
+  outdoorNotAlonePanel: {fileID: 1227160679}
+  indoorAlonePanel: {fileID: 2055009358}
+  outdoorAlonePanel: {fileID: 1227160679}
+  scrollRect: {fileID: 1055730165}
+--- !u!114 &26571568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26571565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 26571569}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 26571567}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: HideIndoorNotAloneActivites
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &26571569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26571565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -9042028117199634284, guid: f0d663b77a25b554fa00f855345c8ed4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &26571570
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26571565}
+  m_CullTransparentMesh: 1
 --- !u!1 &27121849
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,7 +2665,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 4210}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &46786533
 MonoBehaviour:
@@ -4838,6 +4997,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!114 &135455682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4995,6 +5155,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!114 &142986397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6255,6 +6416,164 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174611914}
   m_CullTransparentMesh: 1
+--- !u!1 &175811955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 175811956}
+  - component: {fileID: 175811960}
+  - component: {fileID: 175811959}
+  - component: {fileID: 175811958}
+  - component: {fileID: 175811957}
+  m_Layer: 5
+  m_Name: backButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &175811956
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175811955}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1381572954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -321, y: -1813}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &175811957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175811955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2956c9f6ff4bdf0408eb07522d9a1655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanelManager
+  nextPanel: {fileID: 0}
+  currentPanel: {fileID: 0}
+  previousPanel: {fileID: 0}
+  scrollView: {fileID: 1055730163}
+  indoorAloneScroll: {fileID: 1381572953}
+  outdoorAloneScroll: {fileID: 180813589}
+  indoorNotAloneScroll: {fileID: 1242791608}
+  outdoorNotAloneScroll: {fileID: 1982384523}
+  indoorNotAlonePanel: {fileID: 2055009358}
+  outdoorNotAlonePanel: {fileID: 1227160679}
+  indoorAlonePanel: {fileID: 2055009358}
+  outdoorAlonePanel: {fileID: 1227160679}
+  scrollRect: {fileID: 1055730165}
+--- !u!114 &175811958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175811955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 175811959}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 175811957}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: HideIndoorAloneActivites
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &175811959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175811955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -9042028117199634284, guid: f0d663b77a25b554fa00f855345c8ed4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &175811960
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175811955}
+  m_CullTransparentMesh: 1
 --- !u!1 &176621564
 GameObject:
   m_ObjectHideFlags: 0
@@ -6427,6 +6746,7 @@ RectTransform:
   - {fileID: 2126200865}
   - {fileID: 957324642}
   - {fileID: 1121702430}
+  - {fileID: 1759889419}
   m_Father: {fileID: 46786532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -8517,6 +8837,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 1227160679}
   indoorAlonePanel: {fileID: 2055009358}
   outdoorAlonePanel: {fileID: 1227160679}
+  scrollRect: {fileID: 1055730165}
 --- !u!1 &298095686
 GameObject:
   m_ObjectHideFlags: 0
@@ -10038,6 +10359,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!1 &335266864
 GameObject:
   m_ObjectHideFlags: 0
@@ -10884,6 +11206,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!1 &389966235
 GameObject:
   m_ObjectHideFlags: 0
@@ -13365,7 +13688,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 589834649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5928071}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -13930,6 +14253,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!1 &471580979
 GameObject:
   m_ObjectHideFlags: 0
@@ -17515,6 +17839,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!1 &589834648
 GameObject:
   m_ObjectHideFlags: 0
@@ -19099,6 +19424,164 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643473712}
+  m_CullTransparentMesh: 1
+--- !u!1 &643510583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 643510584}
+  - component: {fileID: 643510588}
+  - component: {fileID: 643510587}
+  - component: {fileID: 643510586}
+  - component: {fileID: 643510585}
+  m_Layer: 5
+  m_Name: backButton (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &643510584
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643510583}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1982384524}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -321.00003, y: -1813}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &643510585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643510583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2956c9f6ff4bdf0408eb07522d9a1655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanelManager
+  nextPanel: {fileID: 0}
+  currentPanel: {fileID: 0}
+  previousPanel: {fileID: 0}
+  scrollView: {fileID: 1055730163}
+  indoorAloneScroll: {fileID: 1381572953}
+  outdoorAloneScroll: {fileID: 180813589}
+  indoorNotAloneScroll: {fileID: 1242791608}
+  outdoorNotAloneScroll: {fileID: 1982384523}
+  indoorNotAlonePanel: {fileID: 2055009358}
+  outdoorNotAlonePanel: {fileID: 1227160679}
+  indoorAlonePanel: {fileID: 2055009358}
+  outdoorAlonePanel: {fileID: 1227160679}
+  scrollRect: {fileID: 1055730165}
+--- !u!114 &643510586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643510583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 643510587}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 643510585}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: HideOutdoorNotAloneActivites
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &643510587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643510583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -9042028117199634284, guid: f0d663b77a25b554fa00f855345c8ed4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &643510588
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643510583}
   m_CullTransparentMesh: 1
 --- !u!1 &650720104
 GameObject:
@@ -21756,6 +22239,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!114 &777329654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24629,6 +25113,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!114 &859901249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25060,6 +25545,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!114 &865472302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26302,15 +26788,16 @@ MonoBehaviour:
   nextPanel: {fileID: 1017500630}
   currentPanel: {fileID: 1227160679}
   previousPanel: {fileID: 0}
-  scrollView: {fileID: 0}
-  indoorAloneScroll: {fileID: 0}
-  outdoorAloneScroll: {fileID: 0}
-  indoorNotAloneScroll: {fileID: 0}
-  outdoorNotAloneScroll: {fileID: 0}
-  indoorNotAlonePanel: {fileID: 0}
-  outdoorNotAlonePanel: {fileID: 0}
-  indoorAlonePanel: {fileID: 0}
-  outdoorAlonePanel: {fileID: 0}
+  scrollView: {fileID: 1055730163}
+  indoorAloneScroll: {fileID: 1381572953}
+  outdoorAloneScroll: {fileID: 180813589}
+  indoorNotAloneScroll: {fileID: 1242791608}
+  outdoorNotAloneScroll: {fileID: 1982384523}
+  indoorNotAlonePanel: {fileID: 2055009358}
+  outdoorNotAlonePanel: {fileID: 1227160679}
+  indoorAlonePanel: {fileID: 2055009358}
+  outdoorAlonePanel: {fileID: 1227160679}
+  scrollRect: {fileID: 1055730165}
 --- !u!114 &925777129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26357,7 +26844,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 925777128}
         m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
-        m_MethodName: SelectPanel
+        m_MethodName: ShowOutdoorNotAloneActivites
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33111,8 +33598,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 455160012}
   m_HandleRect: {fileID: 455160011}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.4071929
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -34452,6 +34939,7 @@ RectTransform:
   - {fileID: 1529211109}
   - {fileID: 1155133896}
   - {fileID: 1216866870}
+  - {fileID: 26571566}
   m_Father: {fileID: 46786532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -35340,6 +35828,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!114 &1282512525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37665,11 +38154,12 @@ RectTransform:
   - {fileID: 1198287029}
   - {fileID: 877551402}
   - {fileID: 1007753401}
+  - {fileID: 175811956}
   m_Father: {fileID: 46786532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 391.5, y: -2105}
+  m_AnchoredPosition: {x: 391.49997, y: -2105}
   m_SizeDelta: {x: 783, y: 4210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1383543135
@@ -40601,6 +41091,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!114 &1486338419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44381,6 +44872,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!114 &1611191951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45948,15 +46440,16 @@ MonoBehaviour:
   nextPanel: {fileID: 882457140}
   currentPanel: {fileID: 1227160679}
   previousPanel: {fileID: 0}
-  scrollView: {fileID: 0}
-  indoorAloneScroll: {fileID: 0}
-  outdoorAloneScroll: {fileID: 0}
-  indoorNotAloneScroll: {fileID: 0}
-  outdoorNotAloneScroll: {fileID: 0}
-  indoorNotAlonePanel: {fileID: 0}
-  outdoorNotAlonePanel: {fileID: 0}
-  indoorAlonePanel: {fileID: 0}
-  outdoorAlonePanel: {fileID: 0}
+  scrollView: {fileID: 1055730163}
+  indoorAloneScroll: {fileID: 1381572953}
+  outdoorAloneScroll: {fileID: 180813589}
+  indoorNotAloneScroll: {fileID: 1242791608}
+  outdoorNotAloneScroll: {fileID: 1982384523}
+  indoorNotAlonePanel: {fileID: 2055009358}
+  outdoorNotAlonePanel: {fileID: 1227160679}
+  indoorAlonePanel: {fileID: 2055009358}
+  outdoorAlonePanel: {fileID: 1227160679}
+  scrollRect: {fileID: 1055730165}
 --- !u!114 &1635868968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46003,7 +46496,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1635868967}
         m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
-        m_MethodName: SelectPanel
+        m_MethodName: ShowOutdoorAloneActivites
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -48971,15 +49464,16 @@ MonoBehaviour:
   nextPanel: {fileID: 513142978}
   currentPanel: {fileID: 2055009358}
   previousPanel: {fileID: 0}
-  scrollView: {fileID: 0}
-  indoorAloneScroll: {fileID: 0}
-  outdoorAloneScroll: {fileID: 0}
-  indoorNotAloneScroll: {fileID: 0}
-  outdoorNotAloneScroll: {fileID: 0}
-  indoorNotAlonePanel: {fileID: 0}
-  outdoorNotAlonePanel: {fileID: 0}
-  indoorAlonePanel: {fileID: 0}
-  outdoorAlonePanel: {fileID: 0}
+  scrollView: {fileID: 1055730163}
+  indoorAloneScroll: {fileID: 1381572953}
+  outdoorAloneScroll: {fileID: 180813589}
+  indoorNotAloneScroll: {fileID: 1242791608}
+  outdoorNotAloneScroll: {fileID: 1982384523}
+  indoorNotAlonePanel: {fileID: 2055009358}
+  outdoorNotAlonePanel: {fileID: 1227160679}
+  indoorAlonePanel: {fileID: 2055009358}
+  outdoorAlonePanel: {fileID: 1227160679}
+  scrollRect: {fileID: 1055730165}
 --- !u!114 &1713226412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49026,7 +49520,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1713226411}
         m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
-        m_MethodName: SelectPanel
+        m_MethodName: ShowIndoorAloneActivites
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49707,6 +50201,164 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751178790}
+  m_CullTransparentMesh: 1
+--- !u!1 &1759889418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1759889419}
+  - component: {fileID: 1759889423}
+  - component: {fileID: 1759889422}
+  - component: {fileID: 1759889421}
+  - component: {fileID: 1759889420}
+  m_Layer: 5
+  m_Name: backButton (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1759889419
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759889418}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 180813590}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -321, y: -1813}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1759889420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759889418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2956c9f6ff4bdf0408eb07522d9a1655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanelManager
+  nextPanel: {fileID: 0}
+  currentPanel: {fileID: 0}
+  previousPanel: {fileID: 0}
+  scrollView: {fileID: 1055730163}
+  indoorAloneScroll: {fileID: 1381572953}
+  outdoorAloneScroll: {fileID: 180813589}
+  indoorNotAloneScroll: {fileID: 1242791608}
+  outdoorNotAloneScroll: {fileID: 1982384523}
+  indoorNotAlonePanel: {fileID: 2055009358}
+  outdoorNotAlonePanel: {fileID: 1227160679}
+  indoorAlonePanel: {fileID: 2055009358}
+  outdoorAlonePanel: {fileID: 1227160679}
+  scrollRect: {fileID: 1055730165}
+--- !u!114 &1759889421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759889418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1759889422}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1759889420}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: HideOutdoorAloneActivites
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1759889422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759889418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -9042028117199634284, guid: f0d663b77a25b554fa00f855345c8ed4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1759889423
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759889418}
   m_CullTransparentMesh: 1
 --- !u!1 &1766380390
 GameObject:
@@ -51957,6 +52609,7 @@ MonoBehaviour:
   outdoorNotAlonePanel: {fileID: 0}
   indoorAlonePanel: {fileID: 0}
   outdoorAlonePanel: {fileID: 0}
+  scrollRect: {fileID: 0}
 --- !u!114 &1841084614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56910,7 +57563,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1982384524
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56930,6 +57583,7 @@ RectTransform:
   - {fileID: 643473713}
   - {fileID: 2000299633}
   - {fileID: 439383127}
+  - {fileID: 643510584}
   m_Father: {fileID: 46786532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
